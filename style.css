@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+}
+
+section {
+  background-color: hsl(0, 0%, 98%);
+  height: 100vh;
+  width: 100%;
+}
+
+.pocetnitekst {
+  text-align: center;
+  padding-top: 60px;
+}
+
+.pocetnitekst h2 {
+  font-weight: 200;
+  font-size: 2rem;
+  color: hsl(234, 12%, 34%);
+}
+.pocetnitekst h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  color: hsl(234, 12%, 34%);
+}
+
+.pocetnitekst p {
+  font-size: 0.9375rem;
+  color: hsl(229, 6%, 66%);
+  font-weight: 400;
+}
+
+.red {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.red .box {
+  background-color: #ffffff;
+  width: 350px;
+  height: 250px;
+  margin-top: 30px;
+  padding-right: 25px;
+  padding-left: 25px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-sizing: border-box;
+}
+
+.box {
+  position: relative;
+  border-radius: 10px;
+}
+
+.box img {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+}
+
+.box h2 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  color: hsl(234, 12%, 34%);
+}
+
+.box p {
+  color: hsl(229, 6%, 66%);
+}
+
+.col1 .box {
+  margin-right: 30px;
+}
+.col3 .box {
+  margin-left: 30px;
+}
+
+.box.cyan {
+  border-top: 5px solid hsl(180, 62%, 55%);
+}
+.box.crveno {
+  border-top: 5px solid hsl(0, 78%, 62%);
+}
+.box.orange {
+  border-top: 5px solid hsl(34, 97%, 64%);
+}
+.box.blue {
+  border-top: 5px solid hsl(212, 86%, 64%);
+}
+
+@media screen and (max-width: 1150px) {
+  .red {
+    flex-direction: column;
+  }
+
+  .col1 .box {
+    margin-right: 0px;
+  }
+  .col3 .box {
+    margin-left: 0px;
+  }
+}
